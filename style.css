@@ -4,35 +4,53 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
 }
 
 .card {
     background: white;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 25px;
+    border-radius: 16px;
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-width: 380px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 h1 {
     color: #ff4d6d;
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 button {
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 12px 20px;
+    width: 100%;
     border: none;
     background-color: #ff4d6d;
     color: white;
-    font-size: 15px;
-    border-radius: 5px;
+    font-size: 1rem;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #e63956;
+}
+
+.hidden {
+    display: none;
+    margin-top: 20px;
+    color: #333;
+}
+
 }
 
 .hidden {

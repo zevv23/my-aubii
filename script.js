@@ -1,6 +1,6 @@
 const questions = [
   {
-    q: "What’s my favorite thing about you?",
+    q: "What's my favorite thing about you?",
     a: "smile",
     m: "Your smile makes my worst days better."
   },

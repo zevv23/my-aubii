@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You ❤️</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <div class="card">
-        <h1>Hii, babyy ko 💕</h1>
-        <p>
-            I made this little website, pero di pa talaga ako sanay gumawa kaya basic pa lng sya:). 
-        </p>
+  <div class="card">
+    <h1>Hi, love 💗</h1>
+    <p>Answer the questions to unlock my messages for you.</p>
 
-        <button onclick="showMessage()">Click this, di to scam promise HAHAHAHH</button>
-
-        <p id="secret" class="hidden">
-            Hi babyy ko, sorry po pala kanina kasi lagi kitang kinukulit about dun. Di ko na po talaga ulit i memention yun ah:).
-            I just wanna say I love you so much <3! Yun lng po:). Thank youu! <br> -Yung makulit na bf ni Aubrey
-        </p>
+    <div id="game">
+      <h2 id="question"></h2>
+      <input type="text" id="answer" placeholder="Type your answer" />
+      <button onclick="checkAnswer()">Submit</button>
+      <p id="feedback"></p>
     </div>
 
-    <script src="script.js"></script>
+    <div id="message" class="hidden">
+      <h2>Unlocked 💌</h2>
+      <p id="loveMessage"></p>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="final" class="hidden">
+      <h2>I love you 💖</h2>
+      <p>You’re my favorite person. Always.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

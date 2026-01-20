@@ -27,28 +27,3 @@ const loveMessage = document.getElementById("loveMessage");
 const finalBox = document.getElementById("final");
 
 questionEl.textContent = questions[index].q;
-
-function checkAnswer() {
-  const userAnswer = answerEl.value.trim().toLowerCase();
-  if (userAnswer === questions[index].a) {
-    gameBox.classList.add("hidden");
-    messageBox.classList.remove("hidden");
-    loveMessage.textContent = questions[index].m;
-    feedbackEl.textContent = "";
-  } else {
-    feedbackEl.textContent = "Try again 💕";
-  }
-}
-
-function nextQuestion() {
-  index++;
-  answerEl.value = "";
-  if (index < questions.length) {
-    questionEl.textContent = questions[index].q;
-    messageBox.classList.add("hidden");
-    gameBox.classList.remove("hidden");
-  } else {
-    messageBox.classList.add("hidden");
-    finalBox.classList.remove("hidden");
-  }
-}
